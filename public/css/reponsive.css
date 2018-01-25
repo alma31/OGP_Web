@@ -8350,7 +8350,117 @@ button.close {
   }
 }
 
+html {
+  font-size: 100%;
+  font-family: roboto;
+}
+
+body {
+  background-color: #B0BEC5;
+  /* blue-grey: 200*/
+}
+
+.material-icons.md12 {
+  font-size: 1.7rem;
+  margin-top: 6px;
+}
+
+.material-icons {
+  position: absolute;
+  top: 0.9rem;
+  left: 1rem;
+}
+
 .header_reponsive {
+  position: fixed;
+  width: 100%;
+  background-color: #70b75b;
+  /* pink color primario 500*/
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px;
+  display: block;
+}
+
+/* icono-menú dinamico*/
+
+.iconMenu {
+  z-index: 10;
+  position: relative;
+  cursor: pointer;
+  padding: 1em;
+  width: 2.4rem;
+}
+
+.iconMenu .iconMenu-line {
+  background-color: #fff;
+  border-radius: 0.1rem;
+  height: 0.4rem;
+  width: 400%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.iconMenu .iconMenu-line:nth-child(2) {
+  margin: 0.4rem 0;
+}
+
+/* Effects del icono */
+
+.on .iconMenu--lineTop {
+  -webkit-transform: rotate(45deg) translate(0.41rem, 0.81rem);
+          transform: rotate(45deg) translate(0.41rem, 0.81rem);
+}
+
+.on .iconMenu--lineCenter {
+  opacity: 0;
+}
+
+.on .iconMenu--lineBottom {
+  -webkit-transform: rotate(-45deg) translate(0.34rem, -0.7rem);
+          transform: rotate(-45deg) translate(0.34rem, -0.7rem);
+}
+
+/*  Menú movile-first*/
+
+.mainMenu {
   display: none;
+}
+
+.mainMenu-list {
+  margin: 0;
+  padding: 0;
+}
+
+.mainMenu-item {
+  position: relative;
+  list-style: none;
+}
+
+.mainMenu-link {
+  display: block;
+  font-size: 1.2rem;
+  color: #000;
+  /* color negro*/
+  background-color: #fff;
+  padding: 1.2em;
+  padding-left: 2.6em;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mainMenu-link:hover {
+  background-color: #ECEFF1;
+  /* color blue-grey 400*/
+  color: #000;
+  text-decoration: none;
+}
+
+.title_nav_responsive {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  margin-top: 11px;
+  color: #ffffff;
 }
 
