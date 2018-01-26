@@ -19,6 +19,8 @@
         @include('includes.header')
     </header>
 
+    @include('includes.nav_bar_left')
+
     @yield('content')
 
 </body>

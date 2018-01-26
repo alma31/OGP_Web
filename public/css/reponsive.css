@@ -11528,3 +11528,7 @@ body {
   width: 100%;
 }
 
+.nav_bar_left {
+  display: none;
+}
+

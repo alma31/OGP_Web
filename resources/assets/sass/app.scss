@@ -14,6 +14,23 @@ body {
 }
 
 
-header {
+
+.header_reponsive {
     display: none;
-  }
+}
+
+.nav_bar_left {
+  position: fixed;
+  padding-top: 1px;
+  background-color: $color-green;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+}
+
+
+.logo_img.img-responsive {
+  margin: 0 auto;
+  height: 150px;
+  padding-top: 15px;
+}

@@ -1,4 +1,10 @@
-<header class="header_reponsive">
+<!--
+//////////////////////////////////////////////////////////////
+                         HEADER RESPONSIVE
+/////////////////////////////////////////////////////////////
+ -->
+<div class="header_reponsive">
+<header>
         <h1 class="title_nav_responsive">{{ $name_page }}</h1>
     <div id="js-iconMenu" class="iconMenu">
         <div class="iconMenu-line  iconMenu--lineTop"></div>
@@ -47,3 +53,9 @@
     </ul>
     </div>
 </nav>
+</div>
+<!--
+//////////////////////////////////////////////////////////////
+                         HEADER DESKTOP
+/////////////////////////////////////////////////////////////
+ -->
