@@ -7,6 +7,7 @@
 
 require('./bootstrap');
 
+
 //window.Vue = require('vue');
 
 /**
@@ -31,3 +32,47 @@ function menuToggle(e) {
 }
 
 $btn.on('click', menuToggle);
+
+
+
+$(document).ready(function(){
+    $("#headerMrS > div:gt(0)").hide();
+
+    var carouselInt = '';
+
+    var carouDiv = function(){
+        carouselInt = setInterval(function() {
+            $('#headerMrS > div:first')
+                .fadeOut(500)
+                .next()
+                .fadeIn(500)
+                .end()
+                .appendTo('#headerMrS');
+        },  3000);
+    };
+
+    $(carouDiv());//Initialise the carousel function
+
+    $("#headerMrS").hover(function(){//Stop the carousel on hover
+        clearInterval(carouselInt);
+    },function(){
+        carouDiv();
+    });
+
+
+
+    //Direction Arrow links
+    $(".button-sales").click(function(){
+        $(".header").fadeOut(800);
+        $(".sales").animate({opacity:"show"},800);
+    });
+    $(".button-modern").click(function(){
+        $(".header").fadeOut(800);
+        $(".modern").animate({opacity:"show"},800);
+    });
+    $(".button-antique").click(function(){
+        $(".header").fadeOut(800);
+        $(".antique").animate({opacity:"show"},800);
+    });
+});
+

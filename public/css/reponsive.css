@@ -11403,6 +11403,10 @@ button.close {
   clip: auto;
 }
 
+#headerMrS {
+  display: none;
+}
+
 html {
   font-size: 100%;
   font-family: roboto;
@@ -11514,7 +11518,8 @@ body {
   width: 100%;
   text-align: center;
   position: absolute;
-  margin-top: 11px;
+  font-size: 25px;
+  margin-top: 16px;
   color: #ffffff;
 }
 
@@ -11529,6 +11534,10 @@ body {
 }
 
 .nav_bar_left {
+  display: none;
+}
+
+.content-desktop {
   display: none;
 }
 

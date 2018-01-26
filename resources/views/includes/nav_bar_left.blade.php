@@ -56,4 +56,7 @@
              </ul>
          </div>
      </div>
+    <div class="content-social-media">
+        <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+    </div>
 </div>
