@@ -46,10 +46,10 @@ body {
 /////////////////////////////////////////////////////////////////////////////
 
 .navigation {
-  width: 13em;
-  font-family: 'roboto', Tahoma, Arial, sans-serif;
+  width: 100%;
+  font-size: 16px;
   zoom: 1;
-  margin-left: 18px;
+  margin-left: 10px;
   text-align: center;
   padding: 0;
   border: 0;
@@ -114,7 +114,7 @@ body {
 
 .navigation {
   width: 13em;
-  font-family: 'roboto', Tahoma, Arial, sans-serif;
+  font-family: bebas-neue, sans-serif;
   zoom: 1;
 }
 
@@ -137,7 +137,6 @@ body {
   text-transform: uppercase;
 }
 
-.navigation > ul { width: 13em; }
 
 .navigation ul ul { width: 13em; }
 

@@ -5,13 +5,13 @@
      <div class="content-btn">
          <div class="navigation">
              <ul>
-                 <li> <a href="#">LE SPOT</a></li>
-                 <li> <a href="#">LES ACTIVITES</a></li>
-                 <li> <a href="#">LA RESTAURATION</a></li>
-                 <li> <a href="#">LES EVENEMENTS</a></li>
-                 <li> <a href="#">LES TARIFS</a></li>
-                 <li> <a href="#">LA GALERIE</a></li>
-                 <li> <a href="#">CONTACT</a></li>
+                 <li> <a href="{{url('spot')}}">LE SPOT</a></li>
+                 <li> <a href="{{url('activite')}}">LES ACTIVITES</a></li>
+                 <li> <a href="{{url('restauration')}}">LA RESTAURATION</a></li>
+                 <li> <a href="{{url('event')}}">LES EVENEMENTS</a></li>
+                 <li> <a href="{{url('tarif')}}">LES TARIFS</a></li>
+                 <li> <a href="{{url('galerie')}}">LA GALERIE</a></li>
+                 <li> <a href="{{url('contact')}}">CONTACT</a></li>
                  <li class="has-sub"> <a href="#">Magazin Online</a>
                      <ul>
                          <li class="has-sub"> <a href="#">Cafea</a>
