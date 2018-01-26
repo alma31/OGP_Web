@@ -8,8 +8,12 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
+body {
+  margin: 0;
+  padding: 0;
+}
 
 
-.header_reponsive {
+header {
     display: none;
   }

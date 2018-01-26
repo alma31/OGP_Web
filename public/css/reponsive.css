@@ -8372,13 +8372,14 @@ body {
 }
 
 .header_reponsive {
-  position: fixed;
   width: 100%;
+  z-index: 10;
   background-color: #70b75b;
   /* pink color primario 500*/
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px;
           box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px;
   display: block;
+  top: 0;
 }
 
 /* icono-menú dinamico*/
@@ -8462,5 +8463,15 @@ body {
   position: absolute;
   margin-top: 11px;
   color: #ffffff;
+}
+
+.menu_scoll {
+  height: 388pt;
+  overflow: auto;
+}
+
+.mainMenu.js-toggleEffect {
+  position: fixed;
+  width: 100%;
 }
 

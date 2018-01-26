@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::get('/activite', function (){
     return view('activite');
 });
+

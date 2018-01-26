@@ -8350,7 +8350,12 @@ button.close {
   }
 }
 
-.header_reponsive {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
   display: none;
 }
 

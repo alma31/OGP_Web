@@ -15,14 +15,12 @@
 </head>
 <body>
 
-<div class="container">
-    <div id='app'></div>
-    <header class="row">
+    <header>
         @include('includes.header')
     </header>
 
     @yield('content')
-</div>
+
 </body>
 
 <script src="{{ mix('js/app.js') }}"></script>
