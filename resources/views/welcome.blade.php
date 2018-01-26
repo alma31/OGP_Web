@@ -7,7 +7,7 @@
 @section('content')
 
 <div>
-    <h1>mamama</h1>
+    <h1>le spot</h1>
 </div>
 
 

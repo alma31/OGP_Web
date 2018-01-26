@@ -10,7 +10,7 @@
     <div class="menu_scoll">
     <ul class="mainMenu-list">
         <li class="mainMenu-item">
-            <a href="#" class="mainMenu-link">
+            <a href="{{url('spot')}}" class="mainMenu-link">
                 <i class="md12 material-icons">place</i>LE SPOT
             </a>
         </li>
@@ -47,4 +47,3 @@
     </ul>
     </div>
 </nav>
-<div><h1>Le spot</h1></div>
