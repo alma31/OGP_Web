@@ -12,27 +12,35 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $name_page = "Le spot";
+    return view('welcome', ['name_page' => $name_page]);
 });
 Route::get('/spot', function (){
-    return view('welcome');
+    $name_page = "Le spot";
+    return view('welcome', ['name_page' => $name_page]);
 });
 Route::get('/activite', function (){
-    return view('activite');
+    $name_page = "les activités";
+    return view('activite', ['name_page' => $name_page]);
 });
 Route::get('/contact', function (){
-    return view('contact');
+    $name_page = "Contact";
+    return view('contact', ['name_page' => $name_page]);
 });
 Route::get('/event', function (){
-    return view('event');
+    $name_page = "Les événements";
+    return view('event', ['name_page' => $name_page]);
 });
 Route::get('/galerie', function (){
-    return view('galerie');
+    $name_page = "Galerie";
+    return view('galerie', ['name_page' => $name_page]);
 });
 Route::get('/restauration', function (){
-    return view('restauration');
+    $name_page = "La restauration";
+    return view('restauration', ['name_page' => $name_page]);
 });
 Route::get('/tarif', function (){
-    return view('tarif');
+    $name_page = "Les tarif";
+    return view('tarif', ['name_page' => $name_page]);
 });
 
