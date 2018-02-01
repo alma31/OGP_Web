@@ -69,9 +69,6 @@
     <div class="header antique">
         <div class="header-content">
             <img style="width: 100%;height: 100%;" src="img/diapo_2_ogp.jpg" alt="" />
-
-            <div class="button-next button-modern">next</div>
-            <div class="button-prev button-sales">prev</div>
         </div>
     </div>
     <div class="header modern">
@@ -80,3 +77,4 @@
         </div>
     </div>
 </div>
+<div class="bar_white"></div>

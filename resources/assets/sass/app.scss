@@ -1,6 +1,10 @@
 
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@font-face {
+  font-family: test;
+  src: url('/public/fonts/BebasNeue.otf');
+}
 
 // Variables
 @import "variables";
@@ -13,6 +17,7 @@
 
 body {
   margin: 0;
+  background-color: #ffffff !important;
   padding: 0;
 }
 
@@ -22,31 +27,49 @@ body {
     display: none;
 }
 
-.nav_bar_left {
+.logo_div {
   position: fixed;
-  padding-top: 1px;
-  background-color: $color-green;
-  top: 0;
-  width: 220px;
-  height: 100vh;
+  z-index: 100;
+  height: 300px;
+  width: 300px;
+  background: rgba(112, 183, 91, 0.5);
 }
-
 
 .logo_img.img-responsive {
   margin: 0 auto;
-  height: 150px;
+  height: 262px;
   padding-top: 30px;
 }
 .content-btn {
-  margin-top: 50px;
+  margin-top: 310px;
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.bar_white {
+  position: absolute;
+  margin-top: 300px;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  height: 7px;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////
 /////////////////////////NAVBARLEFT///////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
+
+.nav_bar_left {
+  position: fixed;
+  padding-top: 1px;
+  margin-top: 0;
+  background-color: $color-green;
+  top: 0;
+  z-index: 1;
+  width: 300px;
+  height: 100%;
+}
 
 .navigation {
   width: 100%;
@@ -67,11 +90,6 @@ body {
   padding: 0;
 }
 
-.navigation ul {
-  position: relative;
-  z-index: 500;
-  float: left;
-}
 
 .navigation ul li {
   float: left;
@@ -116,9 +134,10 @@ body {
 .navigation ul ul { margin-top: 0.05em; }
 
 .navigation {
-  width: 13em;
-  font-family: bebas-neue, sans-serif;
+  width: 290px;
+  font-family: test;
   zoom: 1;
+  margin-left: 6px;
 }
 
 .navigation:before {
@@ -143,15 +162,18 @@ body {
 
 .navigation ul ul { width: 13em; }
 
-.navigation > ul > li > a {
-  border-right: 0.3em solid $color-green;
-  color: #ffffff;
-}
+//.navigation > ul > li > a {
+//  border-right: 0.3em solid $color-green;
+//  color: #ffffff;
+//}
 
 .navigation > ul > li > a:hover { color: #ffffff; }
 
 .navigation > ul > li a:hover,
-.navigation > ul > li:hover a { background: #34A65F; }
+.navigation > ul > li:hover a {     background: #666666;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px; }
 
 .navigation li { position: relative; }
 
@@ -255,7 +277,7 @@ body {
 //////////////////////////CAROUSSEL//////////////////////////////////
 ////////////////////////////////////////////////////////////////////
 
-#headerMrS {position:fixed; height:200px; width:100%;}
+#headerMrS {position:absolute; height:300px; width:100%; z-index: 12; box-shadow: 10px 10px 10px #927f7f;}
 .header {position:absolute; top:0; left:0}
 
 
@@ -264,11 +286,20 @@ body {
 ///////////////////////////////////////////////////////////////////
 
 .content-desktop {
-  margin-left: 219px;
+  margin-left: 300px;
   height: 100%;
-  padding-top: 200px;
+  padding-top: 307px;
 }
 
+.test {
+  text-align: center;
+  width: 600px;
+  margin-left: 28%;
+}
+
+.content-responsive {
+  display: none;
+}
 
 
 

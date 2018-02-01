@@ -11407,6 +11407,10 @@ button.close {
   display: none;
 }
 
+.logo_div {
+  display: none;
+}
+
 html {
   font-size: 100%;
   font-family: roboto;
