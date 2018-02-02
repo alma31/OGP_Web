@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@yield('title')</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="{{asset('css/app.css')}}" rel="stylesheet" />
-    <link rel="stylesheet" media="screen and (max-width: 816px)" href="{{asset('css/reponsive.css')}}" type="text/css" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" media="screen and (max-width: 816px)" href="css/reponsive.css" type="text/css" />
 
 
 
