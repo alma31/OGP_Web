@@ -39,6 +39,7 @@ body { background-color: #ffffff; /* blue-grey: 200*/}
 .header_reponsive {
   width: 100%;
   z-index: 10;
+  position: fixed;
   background-color: $color-green; /* pink color primario 500*/
   box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
   display: block;
@@ -128,4 +129,12 @@ body { background-color: #ffffff; /* blue-grey: 200*/}
 ////////////////////////////////////////////////////////
 .content-desktop {
   display: none;
+}
+
+
+
+
+.content-responsive {
+  display: block;
+  margin-top: 50px;
 }
