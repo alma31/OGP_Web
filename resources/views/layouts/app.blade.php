@@ -8,7 +8,7 @@
     <title>@yield('title')</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="{{asset('css/app.css')}}" rel="stylesheet" />
-    <link rel="stylesheet" media="screen and (max-width: 744px)" href="{{asset('css/reponsive.css')}}" type="text/css" />
+    <link rel="stylesheet" media="screen and (max-width: 816px)" href="{{asset('css/reponsive.css')}}" type="text/css" />
 
 
 
@@ -26,6 +26,7 @@
 </body>
 
 <script src="{{ mix('js/app.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 @yield('scriptPage')
 </html>
 
