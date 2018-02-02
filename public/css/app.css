@@ -11419,7 +11419,6 @@ button.close {
 body {
   height: 100%;
   margin: 0;
-  background-color: #ffffff !important;
   padding: 0;
   width: 100%;
 }
@@ -11450,7 +11449,7 @@ body {
 .content-btn {
   margin-top: 320px;
   width: 100%;
-  height: 100%;
+  height: 50%;
 }
 
 .bar_white {
@@ -11496,6 +11495,7 @@ body {
   float: left;
   min-height: 0.05em;
   line-height: 1em;
+  margin-bottom: 2px;
   vertical-align: middle;
   position: relative;
 }
@@ -11564,7 +11564,7 @@ body {
 
 .navigation a {
   display: block;
-  padding: 1.2em 1.5em;
+  padding: 1em 1.5em;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -11580,6 +11580,13 @@ body {
 
 .navigation > ul > li a:hover,
 .navigation > ul > li:hover a {
+  background: #666666;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.active {
   background: #666666;
   border-radius: 5px;
   margin-left: 20px;
@@ -11680,9 +11687,9 @@ body {
 
 .content-social-media {
   width: 100%;
+  margin-top: 20px;
   text-align: center;
   color: #fff;
-  margin-top: 20px;
 }
 
 #headerMrS {
@@ -11720,6 +11727,16 @@ body {
   display: none;
 }
 
+.row.img_count {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.compteur {
+  font-size: 35px;
+  color: #70b75b;
+}
+
 #weather {
   width: 500px;
   margin: 0px auto;
@@ -11727,7 +11744,7 @@ body {
   text-transform: uppercase;
 }
 
-i {
+#weather i {
   color: #70b75b;
   font-family: weather;
   font-size: 150px;
@@ -11938,13 +11955,16 @@ i {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
-#weather ul {
-  margin: 0;
-  padding: 0;
+.weather_custome {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 20px;
 }
 
 #weather li {
   background: #fff;
+  margin-left: 10px;
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   display: inline-block;

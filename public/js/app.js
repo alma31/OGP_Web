@@ -789,6 +789,10 @@ function menuToggle(e) {
 $btn.on('click', menuToggle);
 
 $(document).ready(function () {
+    CountBierre();
+    CountGrabe();
+    CountMusique();
+    CountOllie();
     $("#headerMrS > div:gt(0)").hide();
 
     var carouselInt = '';
@@ -839,10 +843,14 @@ $(document).ready(function () {
 $(document).ready(function () {
     $.simpleWeather({
         location: 'Bessieres, FR',
+        woeid: '',
         unit: 'c',
         success: function success(weather) {
-            html = '<h2><ia id="defil" class="icon-' + weather.code + '"></ia> ' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
-            $("#weather").append(html);
+            html = '<h2><i class="icon-' + weather.code + '"></i> ' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
+            html += '<ul class="weather_custome"><li>' + weather.city + ', ' + weather.region + '</li>';
+            html += '<li>' + weather.wind.direction + ' ' + weather.wind.speed + ' ' + weather.units.speed + '</li></ul>';
+
+            $("#weather").html(html);
         },
         error: function error(_error) {
             $("#weather").html('<p>' + _error + '</p>');
@@ -851,23 +859,123 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $.simpleWeather({
-        location: 'Bessieres, FR',
-        woeid: '',
-        unit: 'c',
-        success: function success(weather) {
-            html = '<h2><i class="icon-' + weather.code + '"></i> ' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
-            html += '<ul><li>' + weather.city + ', ' + weather.region + '</li>';
-            html += '<li class="currently">' + weather.currently + '</li>';
-            html += '<li>' + weather.wind.direction + ' ' + weather.wind.speed + ' ' + weather.units.speed + '</li></ul>';
-
-            $("#weather").html(html);
-        },
-        error: function error(_error2) {
-            $("#weather").html('<p>' + _error2 + '</p>');
-        }
+    $("#spot_menue").click(function () {
+        removeAllClass();
+        $("#spot_menue").toggleClass("active", true);
+    });
+    $("#activite_menue").click(function () {
+        removeAllClass();
+        $("#activite_menue").toggleClass("active", true);
+    });
+    $("#restauration_menue").click(function () {
+        removeAllClass();
+        $("#restauration_menue").toggleClass("active", true);
+    });
+    $("#event_menue").click(function () {
+        removeAllClass();
+        $("#event_menue").toggleClass("active", true);
+    });
+    $("#tarif_menue").click(function () {
+        removeAllClass();
+        $("#activite_menue").toggleClass("active", true);
+    });
+    $("#tarif_menue").click(function () {
+        removeAllClass();
+        $("#activite_menue").toggleClass("active", true);
+    });
+    $("#galerie_menue").click(function () {
+        removeAllClass();
+        $("#galerie_menue").toggleClass("active", true);
+    });
+    $("#contact_menue").click(function () {
+        removeAllClass();
+        $("#contact_menue").toggleClass("active", true);
     });
 });
+
+function removeAllClass() {
+    $("#spot_menue").toggleClass("active", false);
+    $("#activite_menue").toggleClass("active", false);
+    $("#restauration_menue").toggleClass("active", false);
+    $("#event_menue").toggleClass("active", false);
+    $("#tarif_menue").toggleClass("active", false);
+    $("#galerie_menue").toggleClass("active", false);
+    $("#contact_menue").toggleClass("active", false);
+}
+
+function CountGrabe() {
+    var n = 555; // Nombre final du compteur
+    var cpt = 0; // Initialisation du compteur
+    var duree = 5; // Durée en seconde pendant laquel le compteur ira de 0 à 15
+    var delta = Math.ceil(duree * 1000 / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
+    var node = document.getElementById("compteur_grabe"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
+
+    function countdown() {
+        node.innerHTML = ++cpt;
+        if (cpt < n) {
+            // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
+            setTimeout(countdown, delta);
+        }
+    }
+
+    setTimeout(countdown, delta);
+}
+
+function CountMusique() {
+    var n = 1765; // Nombre final du compteur
+    var cpt = 0; // Initialisation du compteur
+    var duree = 5; // Durée en seconde pendant laquel le compteur ira de 0 à 15
+    var delta = Math.ceil(duree * 1000 / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
+    var node = document.getElementById("compteur_musique"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
+
+    function countdown() {
+        node.innerHTML = ++cpt;
+        if (cpt < n) {
+            // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
+            setTimeout(countdown, delta);
+        }
+    }
+
+    setTimeout(countdown, delta);
+}
+
+function CountOllie() {
+
+    var n = 976; // Nombre final du compteur
+    var cpt = 0; // Initialisation du compteur
+    var duree = 5; // Durée en seconde pendant laquel le compteur ira de 0 à 15
+    var delta = Math.ceil(duree * 1000 / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
+    var node = document.getElementById("compteur_ollie"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
+
+    function countdown() {
+        node.innerHTML = ++cpt;
+        if (cpt < n) {
+            // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
+            setTimeout(countdown, delta);
+        }
+    }
+
+    setTimeout(countdown, delta);
+}
+
+function CountBierre() {
+
+    var n = 325; // Nombre final du compteur
+    var cpt = 0; // Initialisation du compteur
+    var duree = 5; // Durée en seconde pendant laquel le compteur ira de 0 à 15
+    var delta = Math.ceil(duree * 1000 / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
+    var node = document.getElementById("compteur_bierre"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
+
+    function countdown() {
+        node.innerHTML = ++cpt;
+        if (cpt < n) {
+            // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
+            setTimeout(countdown, delta);
+        }
+    }
+
+    setTimeout(countdown, delta);
+}
 
 /***/ }),
 /* 9 */
