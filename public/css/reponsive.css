@@ -11419,6 +11419,10 @@ button.close {
   margin-top: 7px;
 }
 
+.bar_white {
+  display: none;
+}
+
 html {
   font-size: 100%;
   font-family: roboto;
