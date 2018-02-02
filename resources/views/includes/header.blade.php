@@ -6,6 +6,7 @@
 <div class="header_reponsive">
 <header>
         <h1 class="title_nav_responsive">{{ $name_page }}</h1>
+    <img class="logo_img_responsive" src="img/logo_ogp_blanc.svg" alt="">
     <div id="js-iconMenu" class="iconMenu">
         <div class="iconMenu-line  iconMenu--lineTop"></div>
         <div class="iconMenu-line  iconMenu--lineCenter"></div>
