@@ -11975,3 +11975,37 @@ body {
   margin: 0 20px;
 }
 
+.event_image {
+  height: 200px;
+  width: 60%;
+  padding: 10px;
+}
+
+.title_event {
+  display: inline-block;
+  text-align: center;
+}
+
+.img_goutte {
+  margin-top: -10px;
+  padding: 20px;
+}
+
+#grid-title_goutte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#divEvent {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.testcenter {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+

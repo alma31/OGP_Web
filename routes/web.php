@@ -27,10 +27,10 @@ Route::get('/contact', function (){
     $name_page = "Contact";
     return view('contact', ['name_page' => $name_page]);
 });
-Route::get('/event', function (){
-    $name_page = "Les événements";
-    return view('event', ['name_page' => $name_page]);
-});
+
+Route::get('/event', 'EventController@init');
+
+
 Route::get('/galerie', function (){
     $name_page = "Galerie";
     return view('galerie', ['name_page' => $name_page]);

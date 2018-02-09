@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Original Green Park')
+
 @section('content')
     <!--
 //////////////////////////////////////////////////////////////
@@ -8,7 +10,9 @@
  -->
 
     <div class="content-desktop">
-        <h1>Event</h1>
+        <div id="row_event" class="row">
+
+        </div>
     </div>
 
     <!--
@@ -17,7 +21,8 @@
 /////////////////////////////////////////////////////////////
 -->
     <div class="content-responsive">
-        <h1>Event</h1>
+        <div id="row_event_responsive" class="row">
+        </div>
     </div>
 
 @endsection

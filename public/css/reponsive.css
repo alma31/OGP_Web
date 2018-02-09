@@ -11563,3 +11563,9 @@ body {
   margin-top: 50px;
 }
 
+#grid-title_goutte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+

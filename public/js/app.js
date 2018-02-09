@@ -752,8 +752,9 @@ module.exports = __webpack_require__(36);
 
 /***/ }),
 /* 8 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -789,6 +790,7 @@ function menuToggle(e) {
 $btn.on('click', menuToggle);
 
 $(document).ready(function () {
+    init();
     CountBierre();
     CountGrabe();
     CountMusique();
@@ -975,6 +977,36 @@ function CountBierre() {
     }
 
     setTimeout(countdown, delta);
+}
+
+function init() {
+
+    $.ajax({
+        url: "https://graph.facebook.com/oauth/access_token?client_id=1982944171960624&client_secret=047ad1f983b9c8038c7efd5e243abe94&grant_type=client_credentials",
+        type: 'POST',
+        success: function success(code_html, statut) {
+            var token = code_html['access_token'];
+            getEventFacebook(token);
+        },
+
+        error: function error(resultat, statut, erreur) {},
+
+        complete: function complete(resultat, statut) {}
+    });
+}
+
+function getEventFacebook(token) {
+    FB.api('/302706460080999/events', 'GET', {
+        access_token: token,
+        "fields": "timezone,cover,id,end_time,name,place,type,start_time,owner,event_times,description" }, function (response) {
+        //console.log(response.data);
+        for (var i = 0; i < response.data.length; i++) {
+            var listEvent = response.data[i];
+            console.log(listEvent);
+            $("#row_event_responsive").append("<div id='divEvent' class='col-md-12'><img src='" + listEvent.cover.source + "' class='event_image center-block' alt='Responsive image'><div id='grid-title_goutte' class='col-md-12 text-center'><div class='testcenter'><img class='img_goutte' src='img/svg-collé-55063-x-27.svg' alt=''><h3 class='title_event'>" + listEvent.name + "</h3><img class='img_goutte' src='img/svg-collé-55067-x-27.svg' alt=''></div></div><div class='col-lg-12 text-center'><h4 class='title_event'>LE " + listEvent.start_time + "</h4></div><div class='col-lg-2'></div><div class='col-lg-8'><p><strong>Au programme :</strong>" + listEvent.description + "</p></br><a href='https://www.facebook.com/events/" + listEvent.id + "' class='button btn_subscribe'>S'inscrire a l'evenement</a></div><div class='col-lg-2'></div></div>");
+            $("#row_event").append("<div id='divEvent' class='col-md-12'><img src='" + listEvent.cover.source + "' class='event_image center-block' alt='Responsive image'><div id='grid-title_goutte' class='col-md-12 text-center'><div class='testcenter'><img class='img_goutte' src='img/svg-collé-55063-x-27.svg' alt=''><h3 class='title_event'>" + listEvent.name + "</h3><img class='img_goutte' src='img/svg-collé-55067-x-27.svg' alt=''></div></div><div class='col-lg-12 text-center'><h4 class='title_event'>LE " + listEvent.start_time + "</h4></div><div class='col-lg-2'></div><div class='col-lg-8'><p><strong>Au programme :</strong>" + listEvent.description + "</p></br><a href='https://www.facebook.com/events/" + listEvent.id + "' class='button btn_subscribe'>S'inscrire a l'evenement</a></div><div class='col-lg-2'></div></div>");
+        }
+    });
 }
 
 /***/ }),
