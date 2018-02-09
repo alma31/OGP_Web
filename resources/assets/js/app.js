@@ -36,24 +36,6 @@ $btn.on('click', menuToggle);
 
 
 $(document).ready(function(){
-    $(".rslides").responsiveSlides({
-        auto: true,             // Boolean: Animate automatically, true or false
-        speed: 500,            // Integer: Speed of the transition, in milliseconds
-        timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-        pager: false,           // Boolean: Show pager, true or false
-        nav: false,             // Boolean: Show navigation, true or false
-        random: false,          // Boolean: Randomize the order of the slides, true or false
-        pause: false,           // Boolean: Pause on hover, true or false
-        pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-        prevText: "Previous",   // String: Text for the "previous" button
-        nextText: "Next",       // String: Text for the "next" button
-        maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
-        navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-        manualControls: "",     // Selector: Declare custom pager navigation
-        namespace: "rslides",   // String: Change the default namespace used
-        before: function(){},   // Function: Before callback
-        after: function(){}     // Function: After callback
-    });
     init();
     CountBierre();
     CountGrabe();
@@ -289,8 +271,8 @@ function getEventFacebook(token) {
             {
                var listEvent = response.data[i];
                console.log(listEvent);
-                $("#row_event_responsive").append( "<div id='divEvent' class='col-md-12'><img src='"+listEvent.cover.source+"' class='event_image center-block' alt='Responsive image'><div id='grid-title_goutte' class='col-md-12 text-center'><div class='testcenter'><img class='img_goutte' src='img/svg-collé-55063-x-27.svg' alt=''><h3 class='title_event'>"+listEvent.name+"</h3><img class='img_goutte' src='img/svg-collé-55067-x-27.svg' alt=''></div></div><div class='col-lg-12 text-center'><h4 class='title_event'>LE "+listEvent.start_time+"</h4></div><div class='col-lg-2'></div><div class='col-lg-8'><p><strong>Au programme : </strong>"+listEvent.description+"</p></br><a href='https://www.facebook.com/events/"+listEvent.id+"' class='button btn_subscribe'>S'inscrire a l'evenement</a></div><div class='col-lg-2'></div></div>");
-                $("#row_event").append( "<div id='divEvent' class='col-md-12'><img src='"+listEvent.cover.source+"' class='event_image center-block' alt='Responsive image'><div id='grid-title_goutte' class='col-md-12 text-center'><div class='testcenter'><img class='img_goutte' src='img/svg-collé-55063-x-27.svg' alt=''><h3 class='title_event'>"+listEvent.name+"</h3><img class='img_goutte' src='img/svg-collé-55067-x-27.svg' alt=''></div></div><div class='col-lg-12 text-center'><h4 class='title_event'>LE "+listEvent.start_time+"</h4></div><div class='col-lg-2'></div><div class='col-lg-8'><p><strong>Au programme : </strong>"+listEvent.description+"</p></br><a href='https://www.facebook.com/events/"+listEvent.id+"' class='button btn_subscribe'>S'inscrire a l'evenement</a></div><div class='col-lg-2'></div></div>");
+                $("#row_event_responsive").append( "<div id='divEvent' class='col-md-12'><ul class='rslides_event'><li><img src='"+listEvent.cover.source+"' class='event_image center-block' alt='Responsive image'></li></ul><div id='grid-title_goutte' class='col-md-12 text-center'><div class='testcenter'><img class='img_goutte' src='img/svg-collé-55063-x-27.svg' alt=''><h3 class='title_event'>"+listEvent.name+"</h3><img class='img_goutte' src='img/svg-collé-55067-x-27.svg' alt=''></div></div><div class='col-lg-12 text-center'><h4 class='title_event'>LE "+listEvent.start_time+"</h4></div><div class='col-lg-2'></div><div class='col-lg-8'><p><strong>Au programme : </strong>"+listEvent.description+"</p></br><a href='https://www.facebook.com/events/"+listEvent.id+"' class='button btn_subscribe'>S'inscrire a l'evenement</a></div><div class='col-lg-2'></div></div>");
+                $("#row_event").append( "<div id='divEvent' class='col-md-12'><ul class='rslides_event'><li><img src='"+listEvent.cover.source+"' class='event_image center-block' alt='Responsive image'></li></ul><div id='grid-title_goutte' class='col-md-12 text-center'><div class='testcenter'><img class='img_goutte' src='img/svg-collé-55063-x-27.svg' alt=''><h3 class='title_event'>"+listEvent.name+"</h3><img class='img_goutte' src='img/svg-collé-55067-x-27.svg' alt=''></div></div><div class='col-lg-12 text-center'><h4 class='title_event'>LE "+listEvent.start_time+"</h4></div><div class='col-lg-2'></div><div class='col-lg-8'><p><strong>Au programme : </strong>"+listEvent.description+"</p></br><a href='https://www.facebook.com/events/"+listEvent.id+"' class='button btn_subscribe'>S'inscrire a l'evenement</a></div><div class='col-lg-2'></div></div>");
             }
         }
     );
