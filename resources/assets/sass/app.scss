@@ -369,7 +369,7 @@ body {
 
 .rslides_event img {
   display: block;
-  height: auto;
+  height: 178px;
   float: left;
   width: auto;
   border: 0;
@@ -564,6 +564,12 @@ body {
 .testcenter {
   margin: auto;
   display: flex;
+}
+
+.div_subscrib {
+  background-color: #9ACA9A;
+  text-align: center;
+  border-radius: 5px;
 }
 
 
