@@ -311,6 +311,38 @@ body {
 
 #headerMrS {position:absolute; height:300px; width:100%; z-index: 12; box-shadow: 10px 10px 10px #927f7f;}
 .header {position:absolute; top:0; left:0}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: 300px;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
 
 
 ////////////////////////////////////////////////////////////////////
@@ -502,6 +534,9 @@ body {
   margin: auto;
   display: flex;
 }
+
+
+
 
 
 

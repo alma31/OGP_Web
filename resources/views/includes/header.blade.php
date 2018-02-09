@@ -61,7 +61,7 @@
 /////////////////////////////////////////////////////////////
  -->
 
-<div id="headerMrS">
+<!-- <div id="headerMrS">
     <div class="header sales active">
         <div class="header-content">
             <img style="width: 100%;height: 100%;" src="img/diapo_1_ogp.jpg" alt="" />
@@ -77,5 +77,13 @@
             <img style="width: 100%;height: 100%;" src="img/diapo_3_ogp.jpg" alt="" />
         </div>
     </div>
+</div>
+<div class="bar_white"></div> -->
+<div id="headerMrS">
+    <ul class="rslides">
+        <li><img src="img/diapo_1_ogp.jpg" alt=""></li>
+        <li><img src="img/diapo_2_ogp.jpg" alt=""></li>
+        <li><img src="img/diapo_3_ogp.jpg" alt=""></li>
+    </ul>
 </div>
 <div class="bar_white"></div>

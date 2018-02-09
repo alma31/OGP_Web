@@ -26,6 +26,7 @@
 </body>
 <script type="text/javascript" src="https://connect.facebook.net/fr_FR/all.js"></script>
 <script src="{{ mix('js/app.js') }}"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 @yield('scriptPage')
 </html>
