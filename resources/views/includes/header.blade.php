@@ -80,11 +80,9 @@
 </div>
 <div class="bar_white"></div> -->
 <div id="headerMrS">
-    <ul class="rslides">
-        <li><img src="img/diapo_1_ogp.jpg" alt=""></li>
-        <li><img src="img/diapo_2_ogp.jpg" alt=""></li>
-        <li><img src="img/diapo_3_ogp.jpg" alt=""></li>
-    </ul>
+    <video preload="auto" loop autoplay="true" width="100%"  muted height="300" >
+        <source src="video/OriginalGreenPark.mp4" type="video/mp4" />
+    </video>
 </div>
 <div class="bar_white"></div>
 
