@@ -11456,6 +11456,14 @@ body {
   top: 0;
 }
 
+#weather_div {
+  display: none;
+}
+
+#weather {
+  display: none;
+}
+
 /* icono-menú dinamico*/
 
 .iconMenu {
