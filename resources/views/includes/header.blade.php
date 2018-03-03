@@ -18,37 +18,37 @@
     <ul class="mainMenu-list">
         <li class="mainMenu-item">
             <a href="{{url('spot')}}" class="mainMenu-link">
-                <i class="md12 material-icons">place</i>LE SPOT
+                LE SPOT
             </a>
         </li>
         <li class="mainMenu-item">
             <a href="{{url('activite')}}" class="mainMenu-link">
-                <i class="md12 material-icons">account_circle</i>Les activités
+                Les activités
             </a>
         </li>
         <li class="mainMenu-item">
             <a href="{{url('restauration')}}" class="mainMenu-link">
-                <i class="md12 material-icons">work</i>LA RESTAURATION
+                LA RESTAURATION
             </a>
         </li>
         <li class="mainMenu-item">
             <a href="{{url('event')}}" class="mainMenu-link">
-                <i class="md12 material-icons">note_add</i>Les événements
+                Les événements
             </a>
         </li>
         <li class="mainMenu-item">
             <a href="{{url('tarif')}}" class="mainMenu-link">
-                <i class="md12 material-icons">note_add</i>Les tarif
+               Les tarif
             </a>
         </li>
         <li class="mainMenu-item">
             <a href="{{url('galerie')}}" class="mainMenu-link">
-                <i class="md12 material-icons">note_add</i>Galerie
+               Galerie
             </a>
         </li>
         <li class="mainMenu-item">
             <a href="{{url('contact')}}" class="mainMenu-link">
-                <i class="md12 material-icons">note_add</i>Contact
+               Contact
             </a>
         </li>
     </ul>
@@ -87,3 +87,4 @@
     </ul>
 </div>
 <div class="bar_white"></div>
+

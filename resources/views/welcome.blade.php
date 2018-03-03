@@ -12,6 +12,11 @@
  -->
 
 <div class="content-desktop">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div id="weather_div" class="col-md-4"><div id="weather"></div></div>
+        <div class="col-md-4"></div>
+    </div>
     <div class="row img_count">
         <div class="col-md-3">
             <img src="img/grabe.png" alt="">
@@ -34,7 +39,6 @@
     <div class="row">
         <div class="col-md-12">
             <h1 class="text-center">Le spot</h1>
-            <div id="weather"></div>
             <img src="http://image.lachainemeteo.com/images/meteoconsult2014/decoupes_marine/00-Common/02-Menu/img-menu-large_Grndlarge.jpg" class="img-fluid center-block" alt="Responsive image">
         </div>
     </div>

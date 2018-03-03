@@ -11514,11 +11514,10 @@ body {
 .mainMenu-link {
   display: block;
   font-size: 1.2rem;
-  color: #000;
-  /* color negro*/
-  background-color: #fff;
+  color: #ffffff;
+  background-color: rgba(112, 183, 91, 0.9);
   padding: 1.2em;
-  padding-left: 2.6em;
+  font-weight: bold;
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
