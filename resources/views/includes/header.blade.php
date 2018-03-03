@@ -79,6 +79,7 @@
     </div>
 </div>
 <div class="bar_white"></div> -->
+<div id="weather_div"><div id="weather"></div></div>
 <div id="headerMrS">
     <video preload="auto" loop autoplay="true" width="100%"  muted height="300" >
         <source src="video/OriginalGreenPark.mp4" type="video/mp4" />

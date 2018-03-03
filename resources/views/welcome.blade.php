@@ -14,7 +14,7 @@
 <div class="content-desktop">
     <div class="row">
         <div class="col-md-4"></div>
-        <div id="weather_div" class="col-md-4"><div id="weather"></div></div>
+
         <div class="col-md-4"></div>
     </div>
     <div class="row img_count">

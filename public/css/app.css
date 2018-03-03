@@ -11754,14 +11754,14 @@ video {
 }
 
 #weather_div {
-  height: 40px;
-  border-radius: 5px;
-  background-color: #70b75b;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
 }
 
 #weather {
-  width: 500px;
-  margin: 61px auto;
+  width: 250px;
+  margin: 70px 14px;
   text-align: center;
   float: right;
   text-transform: uppercase;
@@ -11770,7 +11770,7 @@ video {
 #weather i {
   color: #ffffff;
   font-family: weather;
-  font-size: 60px;
+  font-size: 150px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.0;
@@ -11972,7 +11972,7 @@ video {
 #weather h2 {
   margin: -74px 0 8px;
   color: #ffffff;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 300;
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
