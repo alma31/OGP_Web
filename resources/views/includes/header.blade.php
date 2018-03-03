@@ -23,7 +23,7 @@
         </li>
         <li class="mainMenu-item">
             <a href="{{url('activite')}}" class="mainMenu-link">
-                Les activités
+                Les ACTIVITES
             </a>
         </li>
         <li class="mainMenu-item">
@@ -33,22 +33,22 @@
         </li>
         <li class="mainMenu-item">
             <a href="{{url('event')}}" class="mainMenu-link">
-                Les événements
+                LES EVENEMENTS
             </a>
         </li>
         <li class="mainMenu-item">
             <a href="{{url('tarif')}}" class="mainMenu-link">
-               Les tarif
+               LES TARIF
             </a>
         </li>
         <li class="mainMenu-item">
             <a href="{{url('galerie')}}" class="mainMenu-link">
-               Galerie
+               LA GALERIE
             </a>
         </li>
         <li class="mainMenu-item">
             <a href="{{url('contact')}}" class="mainMenu-link">
-               Contact
+               CONTACT
             </a>
         </li>
     </ul>

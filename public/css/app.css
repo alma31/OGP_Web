@@ -11695,6 +11695,14 @@ body {
   margin-bottom: 15px;
 }
 
+.logo_facebook {
+  color: inherit;
+}
+
+.logo_facebook:hover {
+  color: inherit;
+}
+
 #headerMrS {
   position: absolute;
   height: 300px;
