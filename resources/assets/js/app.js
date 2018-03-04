@@ -294,6 +294,25 @@ function truncate_reponsive(string){
         return string;
 };
 
+$(document).ready(function () {
+
+    var videoPlayer= document.getElementById('video');
+
+    videoPlayer.addEventListener('ended', function(){
+        this.pause();
+
+        var videos = [
+            "OriginalGreenPark",
+            "Vidéopresentation",
+        ], videos = videos[Math.floor(Math.random() * videos.length)];
+
+        this.src = "video/" + videos + ".mp4";
+
+    }, false);
+
+});
+
+
 
 
 
