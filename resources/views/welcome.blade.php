@@ -12,29 +12,6 @@
  -->
 
 <div class="content-desktop">
-    <div class="row">
-        <div class="col-md-4"></div>
-
-        <div class="col-md-4"></div>
-    </div>
-    <div class="row img_count">
-        <div class="col-md-3">
-            <img src="img/grabe.png" alt="">
-            <p class="compteur" id="compteur_grabe">0</p>
-        </div>
-        <div class="col-md-3">
-            <img src="img/musique.png" alt="">
-            <p class="compteur" id="compteur_musique">0</p>
-        </div>
-        <div class="col-md-3">
-            <img src="img/ollie_texte_poster_.png" alt="">
-            <p class="compteur" id="compteur_ollie">0</p>
-        </div>
-        <div class="col-md-3">
-            <img src="img/bierre.png" alt="">
-            <p class="compteur" id="compteur_bierre">0</p>
-        </div>
-    </div>
     <div id="spot">
     <div class="row">
         <div class="col-md-12">

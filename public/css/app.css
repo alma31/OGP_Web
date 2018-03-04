@@ -11743,11 +11743,6 @@ video {
   display: none;
 }
 
-.row.img_count {
-  text-align: center;
-  margin-top: 20px;
-}
-
 .compteur {
   font-size: 35px;
   color: #70b75b;
