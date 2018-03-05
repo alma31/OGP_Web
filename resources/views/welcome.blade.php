@@ -58,7 +58,7 @@
         <div id="spot">
             <div class="row">
 
-                    <video id="video" autoplay autobuffer  width="100%"  muted height="150" >
+                    <video id="video" autoplay autobuffer  width="100%"  muted height="200" >
                         <source src="video/Vidéopresentation.mp4" type="video/mp4" />
                     </video>
 
