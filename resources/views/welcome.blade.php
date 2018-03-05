@@ -57,11 +57,11 @@
     <div class="content-responsive">
         <div id="spot">
             <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center">Le spot</h1>
-                    <div id="weather"></div>
-                    <img src="http://image.lachainemeteo.com/images/meteoconsult2014/decoupes_marine/00-Common/02-Menu/img-menu-large_Grndlarge.jpg" class="img-fluid center-block" alt="Responsive image">
-                </div>
+
+                    <video id="video" autoplay autobuffer  width="100%"  muted height="150" >
+                        <source src="video/Vidéopresentation.mp4" type="video/mp4" />
+                    </video>
+
             </div>
             <div class="row">
                 <div class="col-md-12">
