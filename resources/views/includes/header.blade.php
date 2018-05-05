@@ -81,7 +81,7 @@
 <div class="bar_white"></div> -->
 <div id="weather_div"><div id="weather"></div></div>
 <div id="headerMrS">
-    <video id="video" autoplay autobuffer muted width="100%"  muted height="300" >
+    <video id="video" autoplay loop autobuffer muted width="100%"  muted height="300" >
         <source src="video/Vidéopresentation.mp4" type="video/mp4" />
     </video>
 </div>

@@ -199,7 +199,7 @@ function truncate_reponsive(string){
         return string;
 };
 
-$(document).ready(function () {
+/*$(document).ready(function () {
 
     var videoPlayer= document.getElementById('video');
 
@@ -215,7 +215,7 @@ $(document).ready(function () {
 
     }, false);
 
-});
+});*/
 
 
 

@@ -926,19 +926,23 @@ function truncate_reponsive(string) {
     if (string.length > 100) return string.substring(0, 100) + '...';else return string;
 };
 
-$(document).ready(function () {
+/*$(document).ready(function () {
 
-    var videoPlayer = document.getElementById('video');
+    var videoPlayer= document.getElementById('video');
 
-    videoPlayer.addEventListener('ended', function () {
+    videoPlayer.addEventListener('ended', function(){
         this.pause();
 
-        var videos = ["OriginalGreenPark", "Vidéopresentation"],
-            videos = videos[Math.floor(Math.random() * videos.length)];
+        var videos = [
+            "OriginalGreenPark",
+            "Vidéopresentation",
+        ], videos = videos[Math.floor(Math.random() * videos.length)];
 
         this.src = "video/" + videos + ".mp4";
+
     }, false);
-});
+
+});*/
 
 /***/ }),
 /* 9 */

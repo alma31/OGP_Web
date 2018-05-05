@@ -12,10 +12,14 @@
                  <li> <a id="tarif_menue" href="{{url('tarif')}}">LES TARIFS</a></li>
                  <li> <a id="galerie_menue" href="{{url('galerie')}}">LA GALERIE</a></li>
                  <li> <a id="contact_menue" href="{{url('contact')}}">CONTACT</a></li>
+                 <li class="li-social"> <a class="logo_facebook" href="https://fr-fr.facebook.com/originalgreenpark/">
+                         <i class="fa fa-facebook-official fa-2x"></i>
+                         <a class="logo-instagram" href="https://www.instagram.com/originalgreenpark/">
+                             <i class="fa fa-instagram fa-2x"></i>
+                         </a>
+                     </a>
+                 </li>
              </ul>
          </div>
      </div>
-    <div class="content-social-media">
-        <a class="logo_facebook" href="https://fr-fr.facebook.com/originalgreenpark/"><i class="fa fa-facebook-official fa-2x"></i></a>
-    </div>
 </div>

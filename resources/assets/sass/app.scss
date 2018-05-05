@@ -137,6 +137,14 @@ body {
   width: 100%;
 }
 
+.li-social {
+  display: inline-flex;
+}
+
+.navigation > ul > .li-social:hover a {     background: transparent;
+  margin-left: 0;
+  margin-right: 0;}
+
 .navigation ul ul li { float: none; }
 
 .navigation ul ul ul {
@@ -297,14 +305,7 @@ body {
   border-radius: 3px 0 0 3px;
 }
 
-.content-social-media {
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 15px;
-}
+
 
 .logo_facebook {
   color: inherit;
